@@ -35,12 +35,12 @@ export const getErrorMessage = (error) => {
 
 export const login = async (data) => {
     // Hàm này đã nằm trong phạm vi của 'api' (được định nghĩa phía trên)
-    const response = await api.post('/auth/login', data);
+    const response = await api.post('/api/login', data);
     return response.data; 
 };
 
 export const register = async (data) => {
     // Hàm này đã nằm trong phạm vi của 'api' (được định nghĩa phía trên)
-    const response = await api.post('/auth/register', data);
+    const response = await api.post('/api/register', data);
     return response.data;
 };
